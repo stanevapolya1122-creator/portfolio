@@ -265,14 +265,8 @@ footer { background: var(--green); color: var(--cream); padding: 60px 5% 50px; t
     <p class="cover-location">Пловдив / Стара Загора</p>
   </div>
   <div class="cover-right">
-    <div class="photo-zone" onclick="this.querySelector('input').click()">
-      <input type="file" accept="image/*" onchange="loadCover(this)">
-      <div class="ph-hint" id="ph-hint">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#3d623b" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-        <span class="lbl">Добави снимка</span>
-        <p>Кликни за да качиш твоя снимка</p>
-      </div>
-      <img id="cover-img" alt="">
+    <div style="width:320px;height:420px;border-radius:2px;overflow:hidden;">
+      <img src="https://drive.google.com/uc?export=view&id=1z9WeGW3beP_5YdTpdse4jrju8kKKubHk" alt="Поля Станева" style="width:100%;height:100%;object-fit:cover;">
     </div>
   </div>
 </section>
@@ -453,10 +447,8 @@ footer { background: var(--green); color: var(--cream); padding: 60px 5% 50px; t
           </div>
         </div>
         <p class="mlabel">Скрийншот / видео на поста</p>
-        <div class="mzone" id="z-p1v2">
-          <input type="file" accept="image/*,video/*" onchange="loadMedia(this,'z-p1v2')">
-          <div class="mzone-inner"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d623b" stroke-width="1.2"><polygon points="5 3 19 12 5 21 5 3"/></svg><p class="mzt">Качи скрийншот или видео</p><p class="mzb">+ Добави</p></div>
-          <img class="mprev" alt=""><video class="mprev" controls playsinline preload="metadata"></video>
+        <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:2px;overflow:hidden;background:#111;">
+          <iframe src="https://www.youtube.com/embed/68BOQt-zwE0" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -479,10 +471,8 @@ footer { background: var(--green); color: var(--cream); padding: 60px 5% 50px; t
           </div>
         </div>
         <p class="mlabel">Скрийншот / видео на поста</p>
-        <div class="mzone" id="z-p1v3">
-          <input type="file" accept="image/*,video/*" onchange="loadMedia(this,'z-p1v3')">
-          <div class="mzone-inner"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d623b" stroke-width="1.2"><polygon points="5 3 19 12 5 21 5 3"/></svg><p class="mzt">Качи скрийншот или видео</p><p class="mzb">+ Добави</p></div>
-          <img class="mprev" alt=""><video class="mprev" controls playsinline preload="metadata"></video>
+        <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:2px;overflow:hidden;background:#111;">
+          <iframe src="https://www.youtube.com/embed/rt52rHTIJcE" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -604,10 +594,8 @@ footer { background: var(--green); color: var(--cream); padding: 60px 5% 50px; t
         <p class="cap-label">Caption</p>
         <div class="caption">"От известно време пазим тайна… и нямаме търпение да ви я споделим 👀"</div>
         <p class="mlabel">Видео - Фаза 1</p>
-        <div class="mzone" id="z-l1">
-          <input type="file" accept="image/*,video/*" onchange="loadMedia(this,'z-l1')">
-          <div class="mzone-inner"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d623b" stroke-width="1.2"><polygon points="5 3 19 12 5 21 5 3"/></svg><p class="mzt">Качи видеото на Фаза 1</p><p class="mzb">+ Добави</p></div>
-          <img class="mprev" alt=""><video class="mprev" controls playsinline preload="metadata"></video>
+        <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:2px;overflow:hidden;background:#111;">
+          <iframe src="https://www.youtube.com/embed/S4zjsv9PTmo" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -622,10 +610,8 @@ footer { background: var(--green); color: var(--cream); padding: 60px 5% 50px; t
         <p class="cap-label">Caption</p>
         <div class="caption">"Нещата в Lindo се променят. За по-вкусно. 🍕 Колко нови пици имаме в менюто? Познай и спечели 10% отстъпка при следващо посещение 👇"</div>
         <p class="mlabel">Видео - Фаза 2</p>
-        <div class="mzone" id="z-l2">
-          <input type="file" accept="image/*,video/*" onchange="loadMedia(this,'z-l2')">
-          <div class="mzone-inner"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d623b" stroke-width="1.2"><polygon points="5 3 19 12 5 21 5 3"/></svg><p class="mzt">Качи видеото на Фаза 2</p><p class="mzb">+ Добави</p></div>
-          <img class="mprev" alt=""><video class="mprev" controls playsinline preload="metadata"></video>
+        <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:2px;overflow:hidden;background:#111;">
+          <iframe src="https://www.youtube.com/embed/HOBOG_dvJi8" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -640,10 +626,8 @@ footer { background: var(--green); color: var(--cream); padding: 60px 5% 50px; t
         <p class="cap-label">Caption</p>
         <div class="caption">"Месеци подготовка, много вълнения и емоции по пътя - всичко това за да предложим нещо по-добро и по-различно. Новото меню на Lindo вече е факт. Заповядайте да го опитате. 🍴"</div>
         <p class="mlabel">Видео - Фаза 3</p>
-        <div class="mzone" id="z-l3">
-          <input type="file" accept="image/*,video/*" onchange="loadMedia(this,'z-l3')">
-          <div class="mzone-inner"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d623b" stroke-width="1.2"><polygon points="5 3 19 12 5 21 5 3"/></svg><p class="mzt">Качи видеото на Фаза 3</p><p class="mzb">+ Добави</p></div>
-          <img class="mprev" alt=""><video class="mprev" controls playsinline preload="metadata"></video>
+        <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:2px;overflow:hidden;background:#111;">
+          <iframe src="https://www.youtube.com/embed/ATQ5y7A9J5g" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -817,10 +801,8 @@ footer { background: var(--green); color: var(--cream); padding: 60px 5% 50px; t
         <p class="cap-label">Caption</p>
         <div class="caption">"10 бучки захар. На ден. Само от една напитка. Не прави компромис в избора си. ✊ Бунтът срещу захарта започва."</div>
         <p class="mlabel">Видео / скрийншот</p>
-        <div class="mzone" id="z-v1">
-          <input type="file" accept="image/*,video/*" onchange="loadMedia(this,'z-v1')">
-          <div class="mzone-inner"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d623b" stroke-width="1.2"><polygon points="5 3 19 12 5 21 5 3"/></svg><p class="mzt">Качи видеото / скрийншота</p><p class="mzb">+ Добави</p></div>
-          <img class="mprev" alt=""><video class="mprev" controls playsinline preload="metadata"></video>
+        <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:2px;overflow:hidden;background:#111;">
+          <iframe src="https://www.youtube.com/embed/MYVtzGcid3w" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -835,14 +817,13 @@ footer { background: var(--green); color: var(--cream); padding: 60px 5% 50px; t
         <p class="cap-label">Caption</p>
         <div class="caption">"В планините на България расте герой, който не се подчинява на масовите вкусове. 🌿⛰️ Мурсалският чай не се отглежда. Събира се на ръка. Открий останалите герои. 💚"</div>
         <p class="mlabel">Качи 6-те слайда на карусела</p>
-        <div class="carup" id="car-v2">
-          <div class="carup-top" onclick="document.getElementById('car-v2-input').click()">
-            <input type="file" accept="image/*" multiple id="car-v2-input" onchange="loadCarousel(this,'car-v2')">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d623b" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            <p class="ct" id="car-v2-lbl">Избери до 6 снимки наведнъж</p>
-            <p class="cb">+ Добави снимки</p>
-          </div>
-          <div class="car-grid" id="car-v2-grid"></div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;border-radius:2px;overflow:hidden;">
+<div style="aspect-ratio:1;overflow:hidden;border-radius:2px;background:var(--cream-dark);"><img src="https://drive.google.com/uc?export=view&id=1jUrAXP5j84MuHAOHqotTCqtuFtDkZG3w" alt="Слайд 1" style="width:100%;height:100%;object-fit:cover;"></div>
+<div style="aspect-ratio:1;overflow:hidden;border-radius:2px;background:var(--cream-dark);"><img src="https://drive.google.com/uc?export=view&id=1O28h6CsLD_90Iq-F2lnIO4KuK1_OTch5" alt="Слайд 2" style="width:100%;height:100%;object-fit:cover;"></div>
+<div style="aspect-ratio:1;overflow:hidden;border-radius:2px;background:var(--cream-dark);"><img src="https://drive.google.com/uc?export=view&id=1xC5c5_P69n2t2nQGFMj0ZXM-d7kd28_d" alt="Слайд 3" style="width:100%;height:100%;object-fit:cover;"></div>
+<div style="aspect-ratio:1;overflow:hidden;border-radius:2px;background:var(--cream-dark);"><img src="https://drive.google.com/uc?export=view&id=10X-vKHuhYgwcP10SEfwkD1CVXxkr0k2D" alt="Слайд 4" style="width:100%;height:100%;object-fit:cover;"></div>
+<div style="aspect-ratio:1;overflow:hidden;border-radius:2px;background:var(--cream-dark);"><img src="https://drive.google.com/uc?export=view&id=15d7w8Ei0j7bGyegiHvWwSPzQLiIuk_ts" alt="Слайд 5" style="width:100%;height:100%;object-fit:cover;"></div>
+<div style="aspect-ratio:1;overflow:hidden;border-radius:2px;background:var(--cream-dark);"><img src="https://drive.google.com/uc?export=view&id=14cz7Ojm5M4s4rLlBIGDoxhUsOj6Jm2sc" alt="Слайд 6" style="width:100%;height:100%;object-fit:cover;"></div>
         </div>
       </div>
     </div>
@@ -857,10 +838,8 @@ footer { background: var(--green); color: var(--cream); padding: 60px 5% 50px; t
         <p class="cap-label">Caption</p>
         <div class="caption">"Лесното не е винаги по-добро. Знаеш го. Ние също. Не ти казваме какво да правиш. Просто ти напомняме, че имаш избор. 🌿 Малките избори днес променят живота ти утре. 🩷"</div>
         <p class="mlabel">Видео / скрийншот</p>
-        <div class="mzone" id="z-v3">
-          <input type="file" accept="image/*,video/*" onchange="loadMedia(this,'z-v3')">
-          <div class="mzone-inner"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3d623b" stroke-width="1.2"><polygon points="5 3 19 12 5 21 5 3"/></svg><p class="mzt">Качи видеото / скрийншота</p><p class="mzb">+ Добави</p></div>
-          <img class="mprev" alt=""><video class="mprev" controls playsinline preload="metadata"></video>
+        <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:2px;overflow:hidden;background:#111;">
+          <iframe src="https://www.youtube.com/embed/zOR8AkbClVk" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
