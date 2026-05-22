@@ -394,12 +394,11 @@ footer { background: var(--green); color: var(--cream); padding: 60px 5% 50px; t
     </div>
   </div>
 
-  <p class="mlabel">Контент календар - линк</p>
-  <div class="lzone">
-    <label for="cal-input">Постави линк към Google Drive</label>
-    <input type="text" id="cal-input" placeholder="https://drive.google.com/..." oninput="handleLink('cal-input','cal-btn')" value="https://docs.google.com/spreadsheets/d/1wE5--fX2F_C5to1PAfLc-WLSh-BitqtI/edit?usp=sharing">
-    <button class="open-btn" id="cal-btn" onclick="openLink('cal-input')" style="display:inline-block">Отвори линка</button>
-  </div>
+  <p class="mlabel">Контент календар</p>
+  <a href="https://docs.google.com/spreadsheets/d/1wE5--fX2F_C5to1PAfLc-WLSh-BitqtI/edit?usp=sharing" target="_blank" style="display:inline-flex;align-items:center;gap:10px;background:var(--green);color:var(--cream);text-decoration:none;padding:12px 24px;border-radius:2px;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+    Виж контент календара
+  </a>
 
   <h3 class="proj-h3">Execution</h3>
   <div style="display:flex;flex-direction:column;gap:20px">
