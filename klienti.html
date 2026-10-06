@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Поля Станева - Маркетинг стратег и SMM специалист</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #3d623b;
+  --green-light: #5a8a57;
+  --green-pale: #c8dcc7;
+  --green-faint: #e8f0e7;
+  --cream: #fffcf6;
+  --cream-dark: #f5f0e8;
+  --text-dark: #1a2419;
+  --text-mid: #3d4a3c;
+  --text-light: #6b7d6a;
+  --divider: rgba(61,98,59,0.15);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text-dark); font-size: 15px; line-height: 1.7; }
+
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,252,246,0.93); backdrop-filter: blur(10px); border-bottom: 1px solid var(--divider); display: flex; align-items: center; justify-content: space-between; padding: 0 5%; height: 58px; }
+.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; letter-spacing: 0.04em; color: var(--green); }
+.nav-links { display: flex; gap: 28px; }
+.nav-links a { text-decoration: none; font-size: 13px; font-weight: 400; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-mid); transition: color 0.2s; }
+.nav-links a:hover { color: var(--green); }
+
+.wrap { padding: 80px 5%; max-width: 1100px; margin: 0 auto; }
+hr.rule { border: none; border-top: 1px solid var(--divider); margin: 0; }
+
+/* COVER */
+#cover { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding: 0; max-width: 100%; overflow: hidden; }
+.cover-left { background: var(--green); display: flex; flex-direction: column; justify-content: center; padding: 100px 8% 80px; }
+.cover-eyebrow { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--green-pale); margin-bottom: 24px; font-weight: 400; }
+.cover-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(48px,5vw,72px); font-weight: 300; line-height: 1.05; color: var(--cream); margin-bottom: 20px; }
+.cover-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(18px,2vw,26px); font-weight: 400; font-style: italic; color: var(--green-pale); margin-bottom: 40px; line-height: 1.3; }
+.cover-line { width: 48px; height: 1px; background: var(--green-pale); margin-bottom: 32px; }
+.cover-location { font-size: 13px; color: var(--green-pale); letter-spacing: 0.04em; }
+.cover-right { background: var(--cream-dark); display: flex; align-items: center; justify-content: center; }
+.photo-zone { width: 320px; height: 420px; border: 1.5px dashed var(--green-pale); border-radius: 2px; display: flex; align-items: center; justify-content: center; cursor: pointer; background: var(--cream); transition: all 0.2s; position: relative; overflow: hidden; }
+.photo-zone:hover { border-color: var(--green); background: var(--green-faint); }
+.photo-zone input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+.photo-zone img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; display: none; }
+.ph-hint { text-align: center; pointer-events: none; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 20px; }
+.ph-hint svg { opacity: 0.35; }
+.ph-hint .lbl { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--green); font-weight: 500; }
+.ph-hint p { font-size: 12px; color: var(--text-light); }
+
+/* TYPOGRAPHY */
+.s-tag { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--green); font-weight: 500; margin-bottom: 10px; }
+.s-heading { font-family: 'Cormorant Garamond', serif; font-size: clamp(34px,4vw,52px); font-weight: 300; line-height: 1.1; color: var(--text-dark); margin-bottom: 36px; }
+.s-heading em { font-style: italic; color: var(--green); }
+.proj-h3 { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 300; margin: 48px 0 20px; color: var(--text-dark); }
+.c-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green); font-weight: 500; margin-bottom: 10px; }
+
+/* ABOUT */
+.about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px; align-items: start; }
+.about-text p { color: var(--text-mid); margin-bottom: 16px; font-size: 15.5px; line-height: 1.8; }
+.creds { display: flex; flex-direction: column; border-left: 2px solid var(--green-pale); padding-left: 24px; }
+.cred-item { padding: 14px 0; border-bottom: 1px solid var(--divider); font-size: 13.5px; }
+.cred-item:last-child { border-bottom: none; }
+.cred-item strong { display: block; color: var(--text-dark); font-weight: 500; margin-bottom: 4px; }
+.cred-item span { display: block; color: var(--text-mid); font-size: 13px; line-height: 1.6; }
+
+/* LAYOUT HELPERS */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+.proj-header { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 6px; }
+.proj-tag { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--green); border: 1px solid var(--green-pale); padding: 4px 10px; border-radius: 2px; font-weight: 500; white-space: nowrap; }
+.proj-meta { font-size: 13px; color: var(--text-light); margin-bottom: 40px; font-style: italic; }
+
+/* CARDS */
+.card { background: var(--cream-dark); border: 1px solid var(--divider); border-radius: 2px; padding: 24px; }
+.card h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; margin-bottom: 10px; color: var(--text-dark); }
+.card p { font-size: 14px; color: var(--text-mid); line-height: 1.65; }
+
+/* LISTS */
+.dash-list { list-style: none; }
+.dash-list li { padding: 11px 0; border-bottom: 1px solid var(--divider); font-size: 14px; color: var(--text-mid); line-height: 1.55; display: flex; gap: 10px; align-items: flex-start; }
+.dash-list li::before { content: "-"; color: var(--green); flex-shrink: 0; font-weight: 500; margin-top: 1px; }
+.dash-list li:last-child { border-bottom: none; }
+
+/* STATS */
+.stat-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin: 32px 0; }
+.stat-box { color: var(--cream); padding: 24px 20px; text-align: center; }
+.stat-box:nth-child(1) { background: var(--green); }
+.stat-box:nth-child(2) { background: var(--green-light); }
+.stat-box:nth-child(3) { background: var(--text-dark); }
+.stat-num { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 300; display: block; line-height: 1; margin-bottom: 6px; }
+.stat-lbl { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.8; }
+
+/* TABLE */
+.mtable { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 14px; }
+.mtable th { background: var(--green); color: var(--cream); padding: 10px 16px; text-align: left; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
+.mtable td { padding: 12px 16px; border-bottom: 1px solid var(--divider); color: var(--text-mid); }
+.mtable tr:last-child td { border-bottom: none; }
+.mtable tr:nth-child(even) td { background: var(--cream-dark); }
+.mn { font-weight: 500; color: var(--green); }
+
+/* MEDIA UPLOAD - fixed video */
+.mzone { border: 1.5px dashed var(--green-pale); border-radius: 2px; padding: 28px 20px; text-align: center; background: var(--cream); transition: border-color 0.2s; position: relative; min-height: 150px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.mzone:hover { border-color: var(--green); }
+.mzone input[type="file"] { position: absolute; inset: 0; opacity: 0; width: 100%; height: 100%; cursor: pointer; z-index: 3; }
+.mzone-inner { display: flex; flex-direction: column; align-items: center; gap: 8px; pointer-events: none; }
+.mzone-inner svg { opacity: 0.3; }
+.mzone-inner .mzt { font-size: 12px; color: var(--text-light); }
+.mzone-inner .mzb { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--green); font-weight: 500; margin-top: 4px; }
+.mzone-inner.gone { display: none; }
+.mzone img.mprev { display: none; max-width: 100%; max-height: 420px; object-fit: contain; border-radius: 2px; position: relative; z-index: 1; }
+.mzone video.mprev { display: none; max-width: 100%; max-height: 420px; background: #111; border-radius: 2px; position: relative; z-index: 1; }
+
+.mlabel { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); margin-bottom: 8px; margin-top: 28px; }
+
+/* LINK ZONE */
+.lzone { border: 1.5px dashed var(--green-pale); border-radius: 2px; padding: 22px 24px; background: var(--cream); transition: border-color 0.2s; }
+.lzone:hover { border-color: var(--green); }
+.lzone label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green); font-weight: 500; display: block; margin-bottom: 10px; }
+.lzone input[type="text"] { width: 100%; border: 1px solid var(--green-pale); border-radius: 2px; padding: 10px 14px; font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--text-dark); background: var(--cream); outline: none; }
+.lzone input[type="text"]:focus { border-color: var(--green); }
+.lzone .open-btn { display: none; margin-top: 10px; font-size: 13px; color: var(--green); text-decoration: underline; cursor: pointer; font-weight: 500; background: none; border: none; font-family: inherit; padding: 0; }
+
+/* CAROUSEL UPLOADER */
+.carup { border: 1.5px dashed var(--green-pale); border-radius: 2px; background: var(--cream); overflow: hidden; transition: border-color 0.2s; }
+.carup:hover { border-color: var(--green); }
+.carup-top { padding: 22px 20px; display: flex; flex-direction: column; align-items: center; gap: 8px; position: relative; cursor: pointer; min-height: 110px; justify-content: center; }
+.carup-top input[type="file"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; z-index: 2; }
+.carup-top svg { opacity: 0.3; }
+.carup-top .ct { font-size: 12px; color: var(--text-light); }
+.carup-top .cb { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--green); font-weight: 500; }
+.car-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 4px; padding: 4px; }
+.car-thumb { aspect-ratio: 1; overflow: hidden; border-radius: 2px; background: var(--cream-dark); position: relative; }
+.car-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.car-thumb .rmb { position: absolute; top: 4px; right: 4px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; width: 22px; height: 22px; font-size: 14px; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 3; line-height: 1; font-family: inherit; }
+
+/* PILLARS */
+.pillars { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 24px; }
+.ptag { background: var(--green-faint); color: var(--green); border: 1px solid var(--green-pale); font-size: 12px; padding: 4px 12px; border-radius: 2px; font-weight: 500; }
+
+/* FUNNEL */
+.funnel { display: flex; margin: 20px 0; overflow: hidden; border-radius: 2px; }
+.fstep { flex: 1; padding: 18px 12px; text-align: center; }
+.fstep:nth-child(1) { background: var(--green); color: var(--cream); }
+.fstep:nth-child(2) { background: var(--green-light); color: var(--cream); }
+.fstep:nth-child(3) { background: var(--green-pale); color: var(--text-dark); }
+.flbl { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; opacity: 0.85; margin-bottom: 6px; display: block; }
+.fval { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 300; display: block; line-height: 1.1; margin-bottom: 4px; }
+.fdesc { font-size: 12px; line-height: 1.4; opacity: 0.9; }
+
+/* POST CARDS */
+.pcard { border: 1px solid var(--divider); border-radius: 2px; overflow: hidden; background: var(--cream); }
+.pcard-head { background: var(--green); color: var(--cream); padding: 16px 20px; }
+.pcard-head h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; margin-bottom: 4px; }
+.pcard-head .pmeta { font-size: 12px; opacity: 0.75; }
+.pcard-body { padding: 20px; }
+.pcard-body p { font-size: 14px; color: var(--text-mid); line-height: 1.65; margin-bottom: 12px; }
+.cap-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green); font-weight: 500; margin-bottom: 6px; margin-top: 16px; }
+.caption { background: var(--green-faint); border-left: 2px solid var(--green); padding: 12px 16px; margin: 6px 0 12px; font-size: 13.5px; color: var(--text-mid); line-height: 1.6; font-style: italic; }
+
+/* PHASE TIMELINE */
+.phases { display: flex; margin: 24px 0; }
+.phase { flex: 1; border: 1px solid var(--divider); padding: 20px; background: var(--cream); border-right: none; }
+.phase:last-child { border-right: 1px solid var(--divider); }
+.phnum { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 300; color: var(--green-pale); line-height: 1; margin-bottom: 8px; }
+.phbar { height: 3px; background: var(--green-faint); margin-bottom: 12px; position: relative; overflow: hidden; }
+.phbar::after { content: ''; position: absolute; left: 0; top: 0; height: 100%; background: var(--green); }
+.phase:nth-child(1) .phbar::after { width: 33%; }
+.phase:nth-child(2) .phbar::after { width: 66%; }
+.phase:nth-child(3) .phbar::after { width: 100%; }
+.phase h4 { font-size: 14px; font-weight: 500; color: var(--text-dark); margin-bottom: 6px; }
+.phase p { font-size: 13px; color: var(--text-mid); line-height: 1.5; }
+
+/* STRATEGY BLOCKS */
+.strat-intro { font-size: 15px; color: var(--text-mid); line-height: 1.8; margin-bottom: 18px; }
+.why-item { background: var(--cream-dark); border-left: 2px solid var(--green); padding: 12px 16px; margin-bottom: 8px; font-size: 14px; color: var(--text-mid); line-height: 1.65; }
+.why-item strong { color: var(--text-dark); font-weight: 500; }
+
+/* LEARNINGS */
+.learn-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; background: var(--divider); margin: 24px 0; }
+.learn-col { background: var(--cream); padding: 24px; }
+.learn-col h4 { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green); font-weight: 500; margin-bottom: 14px; }
+.learn-col ul { list-style: none; }
+.learn-col li { font-size: 13.5px; color: var(--text-mid); padding: 7px 0; border-bottom: 1px solid var(--divider); line-height: 1.55; display: flex; gap: 8px; align-items: flex-start; }
+.learn-col li::before { content: "o"; color: var(--green); flex-shrink: 0; font-size: 10px; margin-top: 5px; }
+.learn-col li:last-child { border-bottom: none; }
+
+/* BRAND */
+.brand-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--divider); margin: 24px 0; }
+.bq { background: var(--cream); padding: 24px; }
+.bq h4 { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 400; margin-bottom: 8px; color: var(--green); }
+.bq p { font-size: 13.5px; color: var(--text-mid); line-height: 1.6; }
+.arch-box { background: var(--text-dark); color: var(--cream); padding: 40px; margin: 24px 0; display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap; }
+.arch-main { flex: 1; min-width: 200px; }
+.arch-sec { flex: 1; min-width: 200px; }
+.arch-lbl { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--green-pale); margin-bottom: 8px; }
+.arch-name { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 300; line-height: 1; margin-bottom: 12px; color: var(--cream); }
+.arch-sec .arch-name { font-size: 32px; color: var(--green-pale); }
+.arch-desc { font-size: 14px; color: rgba(255,252,246,0.75); line-height: 1.65; }
+
+/* QUOTE */
+.qblock { border-left: 3px solid var(--green); margin: 28px 0; padding: 16px 24px; background: var(--green-faint); }
+.qblock p { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; font-style: italic; color: var(--text-dark); line-height: 1.5; }
+
+/* KEY INSIGHTS VIDAS */
+.ki-item { border-left: 2px solid var(--green-pale); padding: 14px 20px; margin-bottom: 8px; background: var(--cream-dark); font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 400; font-style: italic; color: var(--text-dark); line-height: 1.4; }
+
+/* MEASUREMENT */
+.meas-note { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-bottom: 16px; font-style: italic; }
+.meas-h { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green); font-weight: 500; margin-bottom: 12px; margin-top: 24px; }
+.meas-list { list-style: none; }
+.meas-list li { font-size: 14px; color: var(--text-mid); padding: 8px 0; border-bottom: 1px solid var(--divider); line-height: 1.55; display: flex; gap: 10px; }
+.meas-list li::before { content: "-"; color: var(--green); flex-shrink: 0; font-weight: 500; }
+.meas-list li:last-child { border-bottom: none; }
+.ab-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 12px; }
+.ab-card { background: var(--cream-dark); border: 1px solid var(--divider); border-radius: 2px; padding: 16px; }
+.ab-card h5 { font-size: 12px; font-weight: 500; color: var(--green); margin-bottom: 10px; letter-spacing: 0.05em; }
+.ab-card .meas-list li { font-size: 13px; }
+
+/* STEPS */
+.steps { list-style: none; display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--divider); border: 1px solid var(--divider); }
+.steps li { background: var(--cream); padding: 24px; }
+.step-n { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 300; color: var(--green-pale); line-height: 1; display: block; margin-bottom: 8px; }
+.steps h4 { font-size: 15px; font-weight: 500; color: var(--text-dark); margin-bottom: 6px; }
+.steps p { font-size: 14px; color: var(--text-mid); line-height: 1.6; }
+.ft-cta { font-size: 15px; color: var(--green-pale); margin-top: 4px; }
+
+/* FOOTER */
+footer { background: var(--green); color: var(--cream); padding: 60px 5% 50px; text-align: center; }
+.ft-name { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 300; margin-bottom: 8px; }
+.ft-div { width: 40px; height: 1px; background: var(--green-pale); margin: 24px auto; }
+.ft-contacts { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; margin-top: 16px; }
+.ft-item { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.ft-lbl { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green-pale); opacity: 0.7; }
+.ft-val { font-size: 14px; color: var(--green-pale); }
+.ft-val a { color: var(--green-pale); text-decoration: none; }
+.ft-val a:hover { color: var(--cream); }
+
+@media (max-width: 768px) {
+  #cover { grid-template-columns: 1fr; }
+  .cover-left { min-height: 60vh; padding: 100px 6% 60px; }
+  .cover-right { height: 50vh; }
+  .about-grid, .two-col, .three-col, .learn-grid, .brand-grid, .ab-grid, .steps { grid-template-columns: 1fr; }
+  .nav-links { gap: 14px; }
+  .nav-links a { font-size: 11px; }
+  .stat-row { grid-template-columns: 1fr; }
+  .phases { flex-direction: column; }
+  .phase { border-right: 1px solid var(--divider); border-bottom: none; }
+  .phase:last-child { border-bottom: 1px solid var(--divider); }
+  .funnel { flex-direction: column; }
+  .ft-contacts { flex-direction: column; gap: 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">Поля Станева</span>
+  <div class="nav-links">
+    <a href="#about">За мен</a>
+    <a href="#p1">Vereya</a>
+    <a href="#p2">Lindo</a>
+    <a href="#p3">Vidas</a>
+    <a href="#process">Как работим</a>
+  </div>
+</nav>
+
+<!-- ===== COVER ===== -->
+<section id="cover">
+  <div class="cover-left">
+    <p class="cover-eyebrow">Портфолио - 2026</p>
+    <h1 class="cover-name">Поля<br>Станева</h1>
+    <p class="cover-title">Маркетинг стратег<br><span style="font-style:normal">&amp;</span> SMM специалист</p>
+    <div class="cover-line"></div>
+    <p class="cover-location">Стара Загора<br>Работя с клиенти от цялата страна</p>
+  </div>
+  <div class="cover-right">
+    <div style="width:320px;height:420px;border-radius:2px;overflow:hidden;">
+      <img src="https://raw.githubusercontent.com/stanevapolya1122-creator/portfolio/main/%D0%9D%D0%B5%D0%BE%D0%B7%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%B5%D0%BD%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20(2).png" alt="Поля Станева" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<div id="about" class="wrap">
+  <p class="s-tag">01 - За мен</p>
+  <h2 class="s-heading">Стратегия,<br><em>подплатена с реален опит</em></h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>Казвам се Поля Станева. Помагам на малки бизнеси и брандове да изградят присъствие в социалните мрежи с ясна цел: съдържание, което привлича правилните хора и ги превръща в клиенти.</p>
+      <p>Преди да се занимавам с маркетинг, седем години развивах собствен бизнес в търговията, който достигна до няколко физически обекта. Затова знам какво е да си от другата страна: да вложиш време и пари и да очакваш резултат. Подхождам към всеки бранд така, сякаш е мой.</p>
+      <p>Завършила съм психология. Разбирането защо хората избират един продукт пред друг е в основата на всяка стратегия, която изготвям.</p>
+      <p>Всяка работа започва с проучване на бизнеса, клиентите и конкуренцията. От него изграждам стратегия, а след това съдържание, в което всяка публикация има своя цел.</p>
+    </div>
+    <div>
+      <div class="creds">
+        <div class="cred-item">
+          <strong>Образование</strong>
+          <span>Бакалавър психология</span>
+        </div>
+        <div class="cred-item">
+          <strong>SoftUni Digital</strong>
+          <span>Пълна програма Fundamentals</span>
+          <span>Social Media Marketing - Advanced</span>
+        </div>
+        <div class="cred-item">
+          <strong>SoftUni AI</strong>
+          <span>Пълна програма Fundamentals</span>
+        </div>
+        <div class="cred-item">
+          <strong>Опит</strong>
+          <span>7 години собствен бизнес в търговията</span>
+        </div>
+        <div class="cred-item">
+          <strong>Локация</strong>
+          <span>Стара Загора, работя онлайн с клиенти от цялата страна</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="rule">
+
+<!-- ===== PROJECT 1: VEREYA ===== -->
+<div id="p1" class="wrap">
+  <p class="s-tag">02 - Проект 1</p>
+  <div class="proj-header">
+    <h2 class="s-heading" style="margin-bottom:0">Detailing Studio<br><em>Vereya</em></h2>
+    <span class="proj-tag">Реален клиент</span>
+  </div>
+  <p class="proj-meta">Стратегия и създаване на съдържание за социалните мрежи - 1 месец</p>
+
+  <div class="three-col">
+    <div class="card">
+      <p class="c-label">Проблемът</p>
+      <h4>0 клиенти за 2 месеца</h4>
+      <p>Хаотично публикуване без стратегия, еднообразно съдържание без стойност и липса на човешко присъствие.</p>
+    </div>
+    <div class="card">
+      <p class="c-label">Целта</p>
+      <h4>Минимум 1 нов клиент</h4>
+      <p>Органично присъствие и стратегия, която бизнесът може да поддържа сам след края на проекта.</p>
+    </div>
+    <div class="card">
+      <p class="c-label">Периодът</p>
+      <h4>30 март - 24 април</h4>
+      <p>100% органично съдържание. Без платена реклама.</p>
+    </div>
+  </div>
+
+  <h3 class="proj-h3">За кого е съдържанието</h3>
+  <div class="two-col">
+    <div class="card">
+      <p class="c-label">Основен клиент</p>
+      <h4>"Практичният собственик"</h4>
+      <p>Мъж, 25-40 г, кара масов автомобил ежедневно, средни към високи доходи.<br><br>
+      <strong style="font-weight:500;color:var(--green)">Мотиватор:</strong> Не купува услуга. Купува спокойствие, доверие, удобство и ясен резултат.</p>
+    </div>
+    <div class="card">
+      <p class="c-label">Втори тип клиент</p>
+      <h4>"Продавачът / Новият собственик"</h4>
+      <p>Мъж, 25-45 г, купува или продава автомобил.<br><br>
+      <strong style="font-weight:500;color:var(--green)">Страх:</strong> "Ще дам пари и няма да си избия инвестицията."</p>
+    </div>
+  </div>
+
+  <h3 class="proj-h3">Какво открих за клиентите</h3>
+  <ul class="dash-list">
+    <li>"Не се страхувам да платя. Страхувам се да не бъда подведен."</li>
+    <li>"На местно ниво детайлинг студиата изглеждат еднакво - еднаквото съдържание не дава причина защо да избереш един детайлър пред останалите."</li>
+    <li>"Практичният собственик не купува услуга. Купува спокойствие, но първо трябва да разбере защо."</li>
+    <li>"Продавачът мисли с числа, но купува с очи."</li>
+    <li>"Бизнес, в който собственикът е брандът, се нуждае от присъствие, за да изгради доверие."</li>
+  </ul>
+
+  <h3 class="proj-h3">Стратегията</h3>
+  <div class="two-col" style="margin-bottom:24px">
+    <div>
+      <p class="c-label">Платформи</p>
+      <p style="font-size:15px;color:var(--text-mid);margin-bottom:20px">Instagram и TikTok (основни) + Facebook (по желание на клиента)</p>
+      <p class="c-label">Подход</p>
+      <ul class="dash-list">
+        <li>3 публикации седмично и ежедневни сторита (пн-пт)</li>
+        <li>Образователни видеа в началото на седмицата</li>
+        <li>Хумористични видеа в петък</li>
+        <li>Информативна публикация с няколко снимки веднъж седмично</li>
+      </ul>
+    </div>
+    <div>
+      <p class="c-label">Основни теми на съдържанието</p>
+      <div class="pillars">
+        <span class="ptag">Грижа и умни решения за автомобила</span>
+        <span class="ptag">Зад кулисите на детайлинга</span>
+        <span class="ptag">Детайлинг култура</span>
+      </div>
+      <p class="c-label" style="margin-top:20px">Как съдържанието води до клиент</p>
+      <div class="funnel">
+        <div class="fstep"><span class="flbl">Привличане</span><span class="fval">30%</span><p class="fdesc">Хумор и широк интерес</p></div>
+        <div class="fstep"><span class="flbl">Доверие</span><span class="fval">50%</span><p class="fdesc">Полезна информация</p></div>
+        <div class="fstep"><span class="flbl">Покана</span><span class="fval">20%</span><p class="fdesc">Директен призив за записване</p></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="mlabel">Контент календар</p>
+  <a href="https://docs.google.com/spreadsheets/d/1wE5--fX2F_C5to1PAfLc-WLSh-BitqtI/edit?usp=sharing" target="_blank" style="display:inline-flex;align-items:center;gap:10px;background:var(--green);color:var(--cream);text-decoration:none;padding:12px 24px;border-radius:2px;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+    Виж контент календара
+  </a>
+
+  <h3 class="proj-h3">Примери от съдържанието</h3>
+  <div style="display:flex;flex-direction:column;gap:20px">
+
+    <div class="pcard">
+      <div class="pcard-head">
+        <h4>"Често пропускани зони при почистване"</h4>
+        <p class="pmeta">TikTok - Тема: Зад кулисите на детайлинга - 9,100 гледания, 104 харесвания, 8 коментара</p>
+      </div>
+      <div class="pcard-body">
+        <p>Аудиторията смята, че знае какво включва детайлингът. Постът разкрива зони, които дори професионалистите пропускат. Звуците от самата работа задържат вниманието. Позиционира бизнеса като по-внимателен от конкурентите без директна атака.</p>
+        <div class="two-col">
+          <div>
+            <p class="cap-label">Текст за Instagram и Facebook</p>
+            <div class="caption">Мислиш, че колата ти е чиста? 👀<br>Има места, които почти винаги се пропускат…<br>а точно там се събира най-много мръсотия.<br>👉 Колко от тези 6 почистваш ти?</div>
+          </div>
+          <div>
+            <p class="cap-label">Текст за TikTok</p>
+            <div class="caption">Чисто… или наистина чисто? 👀<br>6 места, които почти всеки пропуска<br>👉 Колко от тях почистваш ти?</div>
+          </div>
+        </div>
+        <p class="mlabel">Видеото</p>
+        
+        <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:2px;overflow:hidden;background:#111;">
+          <iframe src="https://player.vimeo.com/video/1194634396" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="pcard">
+      <div class="pcard-head" style="background:var(--green-light)">
+        <h4>"3 неща, които съсипват боята ти"</h4>
+        <p class="pmeta">TikTok - Тема: Грижа и умни решения - 7,800 гледания, 62 харесвания</p>
+      </div>
+      <div class="pcard-body">
+        <p>Постът назовава проблем, показва защо е важен и предлага решение. Показва ежедневни навици, които увреждат боята, и представя керамичното покритие като логично решение, без директна продажба. Насочен към услугата с най-висока печалба и най-висока информационна бариера.</p>
+        <div class="two-col">
+          <div>
+            <p class="cap-label">Текст за Instagram и Facebook</p>
+            <div class="caption">3 неща, които увреждат боята ти…<br>и повечето хора ги правят без да се замислят 👀<br>👉 Ти пазиш ли боята си?</div>
+          </div>
+          <div>
+            <p class="cap-label">Текст за TikTok</p>
+            <div class="caption">Съсипваш боята без да осъзнаваш 👀<br>👉 Сподели в коментар кое от тези правиш?</div>
+          </div>
+        </div>
+        <p class="mlabel">Видеото</p>
+        <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:2px;overflow:hidden;background:#111;">
+          <iframe src="https://player.vimeo.com/video/1194635521" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="pcard">
+      <div class="pcard-head" style="background:var(--text-dark)">
+        <h4>"Ние не се страхуваме от AI"</h4>
+        <p class="pmeta">Instagram - Тема: Детайлинг култура - 6,083 достигнати хора, 267 взаимодействия, 74 споделяния</p>
+      </div>
+      <div class="pcard-body">
+        <p>Използва актуална тема за да покаже човешката страна на бизнеса. <strong style="font-weight:500">74 споделяния</strong> - най-силният резултат за споделяне в периода. Повратният момент в ангажираността на профила.</p>
+        <div class="two-col">
+          <div>
+            <p class="cap-label">Текст за Instagram и Facebook</p>
+            <div class="caption">Докато всички се питат дали AI ще ги измести - ние пастираме, полираме и се радваме на живота. 🕺 Някои професии са просто неприкосновени. 😂</div>
+          </div>
+          <div>
+            <p class="cap-label">Текст за TikTok</p>
+            <div class="caption">Ние не се страхуваме от AI. 😎 Нашата работа се върши с ръце и търпение, което никой алгоритъм няма.</div>
+          </div>
+        </div>
+        <p class="mlabel">Видеото</p>
+        <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:2px;overflow:hidden;background:#111;">
+          <iframe src="https://player.vimeo.com/video/1194635944" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="proj-h3">Резултатите</h3>
+  <div class="stat-row">
+    <div class="stat-box"><span class="stat-num">63,000+</span><span class="stat-lbl">Общо гледания</span></div>
+    <div class="stat-box"><span class="stat-num">38,000+</span><span class="stat-lbl">Уникални потребители</span></div>
+    <div class="stat-box"><span class="stat-num">100%</span><span class="stat-lbl">Органични резултати</span></div>
+  </div>
+  <table class="mtable">
+    <thead><tr><th>Платформа</th><th>Гледания</th><th>Достигнати хора</th><th>Взаимодействия</th></tr></thead>
+    <tbody>
+      <tr><td>Instagram</td><td class="mn">25,100</td><td class="mn">7,100 (+303%)</td><td>542 (+243%)</td></tr>
+      <tr><td>Facebook</td><td class="mn">7,076 (+430%)</td><td class="mn">4,915 (+548%)</td><td>57 (+375%)</td></tr>
+      <tr><td>TikTok</td><td class="mn">33,381</td><td class="mn">30,863 (+692%)</td><td>411 харесвания, 22 коментара, 76 споделяния</td></tr>
+    </tbody>
+  </table>
+
+  <div class="qblock">
+    <p>"Един месец е достатъчен да изградиш основа и да видиш първи сигнали. Стратегията работи - ангажираността се увеличи многократно при изцяло органично съдържание."</p>
+  </div>
+</div>
+
+<hr class="rule">
+
+<!-- ===== PROJECT 2: LINDO ===== -->
+<div id="p2" class="wrap">
+  <p class="s-tag">03 - Проект 2</p>
+  <div class="proj-header">
+    <h2 class="s-heading" style="margin-bottom:0">Lindo<br><em>Restaurant</em></h2>
+    <span class="proj-tag">Концептуален проект</span>
+  </div>
+  <p class="proj-meta">Кампания за ново меню - Стара Загора - ресторант с оценка 4.4/5 от 1,200+ отзива</p>
+
+  <div class="three-col">
+    <div class="card">
+      <p class="c-label">Предизвикателството</p>
+      <h4>Ниска ангажираност</h4>
+      <p>Средно до 20 харесвания в Instagram въпреки качествените снимки. Липса на видео съдържание. Публикации без ясна посока и без нищо, което да отличава ресторанта от конкурентите.</p>
+    </div>
+    <div class="card">
+      <p class="c-label">Целта</p>
+      <h4>По-добре от досегашните резултати</h4>
+      <p>Всеки от трите клипа на кампанията да надмине 48 харесвания и 3 коментара в рамките на 10 дни след публикуване.</p>
+    </div>
+    <div class="card">
+      <p class="c-label">Основни бариери</p>
+      <h4>Трудно достигане</h4>
+      <p>Локацията в краен квартал изисква допълнително усилие. Навикът да се поръча за доставка вместо посещение на място.<br><br><strong style="font-weight:500;color:var(--green)">Мотиватор:</strong> Специален повод или желание за пълно преживяване.</p>
+    </div>
+  </div>
+
+  <h3 class="proj-h3">За кого е кампанията</h3>
+  <div class="two-col">
+    <div class="card">
+      <p class="c-label">Аудитория</p>
+      <h4>Местни жители</h4>
+      <p>Предимно местни жители на Стара Загора на различна възраст: семейства, двойки, млади хора и работещи. Лоялни към места с добро преживяване и отворени към новости.</p>
+    </div>
+    <div class="card">
+      <p class="c-label">Мотиватор за посещение</p>
+      <h4>Пълно преживяване</h4>
+      <p>Специален повод или желание за пълно преживяване - атмосфера, обслужване и храна заедно.</p>
+    </div>
+  </div>
+
+  <h3 class="proj-h3">Стратегията</h3>
+  <p class="strat-intro">Кампанията залага на емоционална комуникация в три фази с ясна прогресия: от любопитство към очакване към покана за действие.</p>
+  <div class="why-item"><strong>Защо видео?</strong> Наблюденията на профила показват, че видео съдържанието ангажира аудиторията значително по-добре от статичните снимки. Изборът е стратегически, не естетически.</div>
+  <div class="why-item"><strong>Защо емоционален подход?</strong> Профилът вече е комуникирал фактите многократно. Емоцията създава желание, информацията не.</div>
+  <div class="why-item"><strong>Защо интерактивен елемент?</strong> Във втората фаза хората познават колко нови пици има в менюто и печелят 10% отстъпка. Това провокира коментари, помага публикацията да достигне до повече хора и дава реална причина за посещение.</div>
+
+  <h3 class="proj-h3">Етапите на кампанията</h3>
+  <div class="phases">
+    <div class="phase"><div class="phbar"></div><div class="phnum">01</div><h4>"Готов ли си за нещо ново?"</h4><p>10 дни преди пускането. Усещане за очакване без конкретика.</p></div>
+    <div class="phase"><div class="phbar"></div><div class="phnum">02</div><h4>"Ново меню през юни"</h4><p>5 дни преди пускането. Първи конкретен продукт за кампанията. Интерактивен въпрос с награда.</p></div>
+    <div class="phase"><div class="phbar"></div><div class="phnum">03</div><h4>"Новото меню вече е факт"</h4><p>2 дни преди пускането. Натрупаното очакване се превръща в покана за действие.</p></div>
+  </div>
+
+  <h3 class="proj-h3">Заснетото съдържание</h3>
+  <div style="display:flex;flex-direction:column;gap:20px">
+
+    <div class="pcard">
+      <div class="pcard-head">
+        <h4>Фаза 1 - "Готов ли си за нещо ново?"</h4>
+        <p class="pmeta">Платформа: Instagram и Facebook</p>
+      </div>
+      <div class="pcard-body">
+        <p>Целта е да се създаде усещане за очакване, без да се разкрива нищо конкретно. Музиката носи емоционалното развитие на видеото - от леко напрежение към по-весел тон към края.</p>
+        <p class="cap-label">Текст към публикацията</p>
+        <div class="caption">"От известно време пазим тайна… и нямаме търпение да ви я споделим 👀"</div>
+        <p class="mlabel">Видеото - Фаза 1</p>
+        <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:2px;overflow:hidden;background:#111;">
+          <iframe src="https://player.vimeo.com/video/1194636665" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="pcard">
+      <div class="pcard-head" style="background:var(--green-light)">
+        <h4>Фаза 2 - "Ново меню през юни"</h4>
+        <p class="pmeta">Платформа: Instagram и Facebook</p>
+      </div>
+      <div class="pcard-body">
+        <p>Първото конкретно разкритие от новото меню. Въпросът с награда в текста кани хората да коментират и им дава причина да дойдат.</p>
+        <p class="cap-label">Текст към публикацията</p>
+        <div class="caption">"Нещата в Lindo се променят. За по-вкусно. 🍕 Колко нови пици имаме в менюто? Познай и спечели 10% отстъпка при следващо посещение 👇"</div>
+        <p class="mlabel">Видеото - Фаза 2</p>
+        <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:2px;overflow:hidden;background:#111;">
+          <iframe src="https://player.vimeo.com/video/1194637268" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="pcard">
+      <div class="pcard-head" style="background:var(--text-dark)">
+        <h4>Фаза 3 - "Новото меню вече е факт"</h4>
+        <p class="pmeta">Платформа: Instagram и Facebook</p>
+      </div>
+      <div class="pcard-body">
+        <p>Натрупаното очакване се превръща в покана за действие. Музиката кулминира в момента на разкриването - вилицата се забучва в тортата.</p>
+        <p class="cap-label">Текст към публикацията</p>
+        <div class="caption">"Месеци подготовка, много вълнения и емоции по пътя - всичко това за да предложим нещо по-добро и по-различно. Новото меню на Lindo вече е факт. Заповядайте да го опитате. 🍴"</div>
+        <p class="mlabel">Видеото - Фаза 3</p>
+        <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:2px;overflow:hidden;background:#111;">
+          <iframe src="https://player.vimeo.com/video/1194637844" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="proj-h3">Как бих измерила резултата</h3>
+  <p class="meas-note">Тъй като кампанията не е публикувана, секцията описва кои метрики бих следяла и защо.</p>
+  <p class="meas-h">В социалните мрежи</p>
+  <ul class="meas-list">
+    <li>До колко нови хора достига съдържанието</li>
+    <li>Харесвания и коментари - особено важни за втората фаза заради въпроса с награда</li>
+    <li>Запазвания - знак за истински интерес</li>
+    <li>Посещения на профила - дали кампанията провокира интерес към бизнеса като цяло</li>
+    <li>Нови последователи - потенциални бъдещи клиенти</li>
+  </ul>
+  <p class="meas-h">В реалния бизнес</p>
+  <p style="font-size:14px;color:var(--text-mid);margin-bottom:10px">Два начина за проследяване на реални посещения:</p>
+  <ul class="meas-list">
+    <li>Клиенти, дошли да ползват отстъпката от втората фаза - всеки от тях е директно доказателство, че кампанията е довела до реално посещение</li>
+    <li>Персоналът пита клиенти, поръчващи от новото меню, откъде са разбрали за него</li>
+  </ul>
+
+</div>
+
+<hr class="rule">
+
+<!-- ===== PROJECT 3: VIDAS ===== -->
+<div id="p3" class="wrap">
+  <p class="s-tag">04 - Проект 3</p>
+  <div class="proj-header">
+    <h2 class="s-heading" style="margin-bottom:0">Vidas</h2>
+    <span class="proj-tag">Концептуален проект</span>
+  </div>
+  <p class="proj-meta">Стратегия за съдържание и характер на бранда</p>
+  <p style="font-size:13px;color:var(--text-light);font-style:italic;margin-bottom:32px">Проектът е разработен върху реален бранд като упражнение в курс по Content Management в SoftUni Digital и не е поръчан от бранда. Показва как изглежда стратегията като самостоятелна услуга.</p>
+
+  <div class="three-col">
+    <div class="card">
+      <p class="c-label">Брандът</p>
+      <h4>Натурални напитки</h4>
+      <p>Български бранд за натурални безалкохолни напитки без захар, консерванти или изкуствени съставки.</p>
+    </div>
+    <div class="card">
+      <p class="c-label">Предизвикателството</p>
+      <h4>Как да се отличи</h4>
+      <p>В категорията на здравословните напитки натуралността вече не е отличително предимство - всички я комуникират.<br><br>TikTok профилът на Vidas е изключително силен - 17K последователи, видеа с 700K+ гледания.<br><br>Instagram профилът е добре поддържан, но посланието за бранд идентичността не е толкова последователно и осезаемо присъстващо.</p>
+    </div>
+    <div class="card">
+      <p class="c-label">Целта</p>
+      <h4>Стратегия за Instagram</h4>
+      <p>Да разработя контент стратегия и примерно съдържание, което комуникира характера на Vidas толкова ясно и автентично, колкото TikTok съдържанието им го прави.</p>
+    </div>
+  </div>
+
+  <h3 class="proj-h3">За кого е брандът</h3>
+  <p style="font-size:15px;color:var(--text-mid);line-height:1.8;margin-bottom:20px">Хора на възраст 20-45 г, жители на по-големи градове, активни в социалните мрежи. Правят по-осъзнати избори в ежедневието, без да се лишават от удоволствие.</p>
+  <div class="two-col">
+    <div>
+      <p class="c-label">Сегменти</p>
+      <ul class="dash-list">
+        <li>Млади двойки и приятели - идентифицират се с ежедневните ситуации в съдържанието</li>
+        <li>Работещи хора с умствено натоварване - релевантни за Zen и Boost</li>
+        <li>Най-младата аудитория - привлечена от хумора и бунтарския тон на бранда</li>
+      </ul>
+    </div>
+    <div>
+      <p class="c-label">Основни бариери</p>
+      <ul class="dash-list">
+        <li>Силна конкуренция в сегмента - множество алтернативи без захар</li>
+        <li>Непознати вкусове и съставки спират ръката преди покупка</li>
+      </ul>
+      <p class="c-label" style="margin-top:20px">Мотиватор</p>
+      <div class="qblock" style="margin-top:0">
+        <p>"Не купуват здравословна напитка. Купуват версия на себе си."</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="proj-h3">Какво открих</h3>
+  <div>
+    <div class="ki-item">"Всички здравословни напитки са натурални. Малко имат характер."</div>
+    <div class="ki-item">"Потребителят не купува напитка. Купува версия на себе си."</div>
+    <div class="ki-item">"Vidas не продава напитка. Разказва истории, в които напитката присъства."</div>
+  </div>
+
+  <h3 class="proj-h3">Характерът на бранда</h3>
+  <div class="arch-box">
+    <div class="arch-main">
+      <p class="arch-lbl">Основна черта</p>
+      <div class="arch-name">Бунтарят</div>
+      <p class="arch-desc">Бунт срещу масовите захарни напитки, изкуствените съставки и индустриалния стандарт. Тонът е категоричен, уверен, леко провокативен.</p>
+    </div>
+    <div class="arch-sec">
+      <p class="arch-lbl">Допълваща черта</p>
+      <div class="arch-name">Грижовният</div>
+      <p class="arch-desc">Грижата за здравето и тялото добавя дълбочина към бунтарския характер.</p>
+    </div>
+  </div>
+  <div class="brand-grid">
+    <div class="bq"><h4>Кои сме?</h4><p>Смел и осъзнат български бранд, който избира качеството пред компромиса.</p></div>
+    <div class="bq"><h4>Защо съществуваме?</h4><p>За да дадем честна алтернатива на захарните напитки и да насърчим по-осъзнат избор.</p></div>
+    <div class="bq"><h4>Какво постигаме?</h4><p>Да станем символ на осъзнатия избор в България.</p></div>
+    <div class="bq"><h4>Как?</h4><p>Чрез натурални съставки, силна идентичност и комуникация, която изгражда дългосрочен имидж.</p></div>
+  </div>
+  <div class="qblock">
+    <p>"Vidas е бунтът срещу изкуствените напитки - натурална алтернатива за хора, които не правят компромис със себе си."</p>
+  </div>
+
+  <h3 class="proj-h3">Стратегията</h3>
+  <p class="strat-intro">Стратегията се изгражда върху характера на бранда - всяко съдържание отразява характера и философията на Vidas. Целта не е да се публикува повече, а по-последователно и по-смислено.</p>
+  <p class="strat-intro">Платформа: Instagram - кратки видеа, публикации с няколко снимки и сторита, подходящи за цялата аудитория.</p>
+  <div class="why-item"><strong>Не продавай, разказвай</strong> - напитката присъства естествено, не като обект на директна продажба</div>
+  <div class="why-item"><strong>Говори за характер, не само за съставки</strong> - съставките се разказват като герои, не се изброяват като ползи</div>
+  <div class="why-item" style="margin-bottom:24px"><strong>Комуникирай последователно бранд идентичността</strong> - всеки пост носи тона на Vidas</div>
+
+  <div class="two-col">
+    <div>
+      <p class="c-label">Основни теми на съдържанието</p>
+      <div class="pillars">
+        <span class="ptag">Бунт срещу масовите напитки</span>
+        <span class="ptag">Силата на природата и натуралните съставки</span>
+        <span class="ptag">Осъзнат начин на живот</span>
+      </div>
+    </div>
+    <div>
+      <p class="c-label">Как съдържанието води до клиент</p>
+      <div class="funnel">
+        <div class="fstep"><span class="flbl">Привличане</span><span class="fval">Тема 1</span><p class="fdesc">Хората научават за бранда</p></div>
+        <div class="fstep"><span class="flbl">Интерес</span><span class="fval">Тема 2</span><p class="fdesc">Опознават продукта</p></div>
+        <div class="fstep"><span class="flbl">Лоялност</span><span class="fval">Тема 3</span><p class="fdesc">Остават и купуват отново</p></div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="proj-h3">Примери от съдържанието</h3>
+  <div style="display:flex;flex-direction:column;gap:20px">
+
+    <div class="pcard">
+      <div class="pcard-head">
+        <h4>"Захарният експеримент"</h4>
+        <p class="pmeta">Кратко вертикално видео - Тема: Бунт срещу масовите напитки</p>
+      </div>
+      <div class="pcard-body">
+        <p>Провокативна логика без директна атака. Показва визуално количеството захар в напитка с неутрална опаковка. Изборът на неутрална опаковка е съзнателен и избягва правни рискове за бранда.</p>
+        <p class="cap-label">Текст към публикацията</p>
+        <div class="caption">"10 бучки захар. На ден. Само от една напитка. Не прави компромис в избора си. ✊ Бунтът срещу захарта започва."</div>
+        <p class="mlabel">Видеото</p>
+        <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:2px;overflow:hidden;background:#111;">
+          <iframe src="https://player.vimeo.com/video/1194638482" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="pcard">
+      <div class="pcard-head" style="background:var(--green-light)">
+        <h4>"Героите на природата: Мурсалски чай"</h4>
+        <p class="pmeta">Публикация с 6 снимки - Тема: Силата на природата и натуралните съставки</p>
+      </div>
+      <div class="pcard-body">
+        <p>Мурсалски чай не като съставка, а като герой с история и произход. Серия, която поставя природните богатства на пиедестал в тона на бранда.</p>
+        <p class="cap-label">Текст към публикацията</p>
+        <div class="caption">"В планините на България расте герой, който не се подчинява на масовите вкусове. 🌿⛰️ Мурсалският чай не се отглежда. Събира се на ръка. Открий останалите герои. 💚"</div>
+        <p class="mlabel">Публикацията</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;border-radius:2px;overflow:hidden;">
+<div style="aspect-ratio:1;overflow:hidden;border-radius:2px;background:var(--cream-dark);"><img src="https://raw.githubusercontent.com/stanevapolya1122-creator/portfolio/main/1.png" alt="Слайд 1" style="width:100%;height:100%;object-fit:cover;"></div>
+<div style="aspect-ratio:1;overflow:hidden;border-radius:2px;background:var(--cream-dark);"><img src="https://raw.githubusercontent.com/stanevapolya1122-creator/portfolio/main/2.png" alt="Слайд 2" style="width:100%;height:100%;object-fit:cover;"></div>
+<div style="aspect-ratio:1;overflow:hidden;border-radius:2px;background:var(--cream-dark);"><img src="https://raw.githubusercontent.com/stanevapolya1122-creator/portfolio/main/3.png" alt="Слайд 3" style="width:100%;height:100%;object-fit:cover;"></div>
+<div style="aspect-ratio:1;overflow:hidden;border-radius:2px;background:var(--cream-dark);"><img src="https://raw.githubusercontent.com/stanevapolya1122-creator/portfolio/main/4.png" alt="Слайд 4" style="width:100%;height:100%;object-fit:cover;"></div>
+<div style="aspect-ratio:1;overflow:hidden;border-radius:2px;background:var(--cream-dark);"><img src="https://raw.githubusercontent.com/stanevapolya1122-creator/portfolio/main/5.png" alt="Слайд 5" style="width:100%;height:100%;object-fit:cover;"></div>
+<div style="aspect-ratio:1;overflow:hidden;border-radius:2px;background:var(--cream-dark);"><img src="https://raw.githubusercontent.com/stanevapolya1122-creator/portfolio/main/6.png" alt="Слайд 6" style="width:100%;height:100%;object-fit:cover;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pcard">
+      <div class="pcard-head" style="background:var(--text-dark)">
+        <h4>"Всеки избор има значение"</h4>
+        <p class="pmeta">Видео с разделен екран - Тема: Осъзнат начин на живот</p>
+      </div>
+      <div class="pcard-body">
+        <p>Екранът е разделен на две. Горе "лесният" избор, долу "полезният" избор в пет ежедневни ситуации. Финалният кадър представя Vidas като естествено продължение на логиката, не като реклама, а като осъзнат избор.</p>
+        <p class="cap-label">Текст към публикацията</p>
+        <div class="caption">"Лесното не е винаги по-добро. Знаеш го. Ние също. Не ти казваме какво да правиш. Просто ти напомняме, че имаш избор. 🌿 Малките избори днес променят живота ти утре. 🩷"</div>
+        <p class="mlabel">Видеото</p>
+        <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:2px;overflow:hidden;background:#111;">
+          <iframe src="https://player.vimeo.com/video/1194640304" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="proj-h3">Как бих измерила резултата</h3>
+  <ul class="meas-list">
+    <li>До колко нови хора достига съдържанието</li>
+    <li>Дали хората запазват и споделят публикациите - знак за истински интерес</li>
+    <li>Колко хора посещават профила и сайта след публикациите</li>
+  </ul>
+
+</div>
+
+<hr class="rule">
+
+<!-- ===== HOW WE WORK ===== -->
+<div id="process" class="wrap">
+  <p class="s-tag">05 - Как работим</p>
+  <h2 class="s-heading">Как работим<br><em>заедно</em></h2>
+  <ol class="steps">
+    <li><span class="step-n">1</span><h4>Разговор</h4><p>Запознаваме се с бизнеса и целите Ви.</p></li>
+    <li><span class="step-n">2</span><h4>Въпросник</h4><p>Разказвате ми повече за бранда, клиентите и очакванията си.</p></li>
+    <li><span class="step-n">3</span><h4>Оферта</h4><p>Получавате предложение, съобразено с нуждите Ви.</p></li>
+    <li><span class="step-n">4</span><h4>Стратегия</h4><p>Изготвям стратегия и план за съдържанието, които одобрявате преди старта.</p></li>
+    <li><span class="step-n">5</span><h4>Съдържание</h4><p>Създавам и публикувам съдържанието по одобрения план.</p></li>
+    <li><span class="step-n">6</span><h4>Анализ</h4><p>В края на всеки месец получавате анализ на резултатите и заедно решаваме какво да подобрим.</p></li>
+  </ol>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="ft-name">Поля Станева</div>
+  <p class="ft-cta">Разкажете ми за Вашия бизнес. Пишете ми или се обадете.</p>
+  <div class="ft-div"></div>
+  <div class="ft-contacts">
+    <div class="ft-item">
+      <span class="ft-lbl">Имейл</span>
+      <span class="ft-val"><a href="mailto:staneva.polya1122@gmail.com">staneva.polya1122@gmail.com</a></span>
+    </div>
+    <div class="ft-item">
+      <span class="ft-lbl">Телефон</span>
+      <span class="ft-val"><a href="tel:+359883548989">0883 548 989</a></span>
+    </div>
+    <div class="ft-item">
+      <span class="ft-lbl">LinkedIn</span>
+      <span class="ft-val"><a href="https://www.linkedin.com/in/polya-staneva-127093410" target="_blank">Polya Staneva</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function loadCover(input) {
+  if (!input.files || !input.files[0]) return;
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    var img = document.getElementById('cover-img');
+    img.src = e.target.result;
+    img.style.display = 'block';
+    document.getElementById('ph-hint').style.display = 'none';
+  };
+  reader.readAsDataURL(input.files[0]);
+}
+
+function loadMedia(input, zoneId) {
+  if (!input.files || !input.files[0]) return;
+  var file = input.files[0];
+  var zone = document.getElementById(zoneId);
+  var imgEl = zone.querySelector('img.mprev');
+  var videoEl = zone.querySelector('video.mprev');
+  var hint = zone.querySelector('.mzone-inner');
+  var isVideo = file.type.startsWith('video/');
+
+  imgEl.style.display = 'none';
+  videoEl.style.display = 'none';
+
+  if (isVideo) {
+    var url = URL.createObjectURL(file);
+    videoEl.setAttribute('src', url);
+    videoEl.setAttribute('type', file.type);
+    videoEl.style.display = 'block';
+    videoEl.style.width = '100%';
+    videoEl.style.maxHeight = '420px';
+    videoEl.style.background = '#111';
+    videoEl.muted = false;
+    videoEl.load();
+    videoEl.onloadeddata = function() { videoEl.pause(); };
+    videoEl.onerror = function() {
+      videoEl.style.display = 'none';
+      var msg = document.createElement('div');
+      msg.style.cssText = 'padding:20px;text-align:center;font-size:13px;color:var(--text-light);';
+      msg.innerHTML = 'Видеото е качено успешно, но браузърът не може да го покаже директно.<br><br><strong style="color:var(--green)">Решение:</strong> Конвертирай го на <a href="https://cloudconvert.com" target="_blank" style="color:var(--green)">cloudconvert.com</a> - избери MP4 (H.264) и качи отново.';
+      zone.appendChild(msg);
+    };
+  } else {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      imgEl.src = e.target.result;
+      imgEl.style.display = 'block';
+      imgEl.style.width = '100%';
+    };
+    reader.readAsDataURL(file);
+  }
+
+  if (hint) hint.classList.add('gone');
+  zone.style.padding = '4px';
+  zone.style.minHeight = 'auto';
+  zone.style.cursor = 'default';
+  input.style.display = 'none';
+}
+
+function loadCarousel(input, carId) {
+  var files = Array.from(input.files);
+  var grid = document.getElementById(carId + '-grid');
+  var existing = grid.querySelectorAll('.car-thumb').length;
+  var canAdd = 6 - existing;
+  if (canAdd <= 0) { alert('Максимум 6 снимки. Премахни някоя преди да добавиш нова.'); return; }
+  files = files.slice(0, canAdd);
+  var lbl = document.getElementById(carId + '-lbl');
+  files.forEach(function(file, idx) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      var th = document.createElement('div');
+      th.className = 'car-thumb';
+      var im = document.createElement('img');
+      im.src = e.target.result;
+      im.alt = 'Слайд ' + (existing + idx + 1);
+      var rm = document.createElement('button');
+      rm.className = 'rmb';
+      rm.textContent = 'x';
+      rm.title = 'Премахни';
+      rm.onclick = function() {
+        th.remove();
+        var count = grid.querySelectorAll('.car-thumb').length;
+        if (lbl) lbl.textContent = count > 0 ? count + ' снимк' + (count === 1 ? 'а качена' : 'и качени') : 'Избери до 6 снимки наведнъж';
+      };
+      th.appendChild(im);
+      th.appendChild(rm);
+      grid.appendChild(th);
+      if (lbl) {
+        var count = grid.querySelectorAll('.car-thumb').length;
+        lbl.textContent = count + ' снимк' + (count === 1 ? 'а качена' : 'и качени');
+      }
+    };
+    reader.readAsDataURL(file);
+  });
+  input.value = '';
+}
+
+function handleLink(inputId, btnId) {
+  var val = document.getElementById(inputId).value.trim();
+  var btn = document.getElementById(btnId);
+  btn.style.display = val.length > 5 ? 'inline-block' : 'none';
+}
+
+function openLink(inputId) {
+  var val = document.getElementById(inputId).value.trim();
+  if (val) window.open(val, '_blank');
+}
+</script>
+</body>
+</html>
